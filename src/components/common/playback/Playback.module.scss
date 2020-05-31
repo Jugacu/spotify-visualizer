@@ -1,0 +1,67 @@
+.container {
+    color: white;
+    text-shadow: 0 0 5px #fff;
+
+    text-transform: uppercase;
+
+    display: inline-block;
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.author {
+    color: #FFF;
+    background: rgba(12, 12, 12, 0.78);
+    padding: 10px;
+    display: inline-block;
+    border-radius: 15px;
+    margin-top: 5px;
+}
+
+.album {
+    color: white;
+    background-image: repeating-linear-gradient(-45deg, rgba(12, 12, 12, 0.78), rgba(12, 12, 12, 0.78) 30px, rgba(26, 162, 74, 0.78) 25px, rgba(26, 162, 74, 0.78) 50px);
+    background-size: 150% 100%;
+    border-radius: 15px;
+    padding: 20px;
+    animation: progress 2s linear infinite;
+
+    &__data {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 50px;
+        vertical-align: middle;
+        text-transform: uppercase;
+    }
+
+    &__name {
+        font-size: 1em;
+        color: rgba(255, 255, 255, 0.5);
+        text-shadow: 0 0 2px #fff;
+    }
+
+    &__song {
+        text-shadow: 0 0 5px #fff;
+        font-size: 2em;
+    }
+
+    &__name, &__song {
+        &:hover {
+            color: rgba(29, 185, 84, 0.5);
+            text-shadow: 0 0 5px rgba(29, 185, 84, 0.5);
+            cursor: default;
+        }
+    }
+}
+
+@keyframes progress {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -70px 0px;
+    }
+}

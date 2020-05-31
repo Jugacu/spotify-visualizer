@@ -1,0 +1,3 @@
+<?php
+const CLIENT_ID = '6feb57fa92ce4991af705167b1a3b7f1';
+const CLIENT_SECRET = 'b222abd59d1f4e26ada8666128524ea1';

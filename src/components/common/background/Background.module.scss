@@ -1,0 +1,41 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+}
+
+.image {
+    position: fixed;
+    left: -5%;
+    top: -7.5%;
+    margin: -20px;
+    height: 120%;
+    width: 120%;
+
+    background-color: #000;
+    background-size: cover;
+    background-position: center 10%;
+
+    animation: moving 15s linear infinite forwards;
+    filter: blur(3px);
+
+    z-index: -3;
+}
+
+.smoother {
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    z-index: -2;
+}
+
+@keyframes moving {
+    from {
+        transform: rotate(0deg) translateX(-5vw) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(-5vw) rotate(-360deg);
+    }
+}

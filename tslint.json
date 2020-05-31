@@ -1,0 +1,38 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended", "tslint-react"
+    ],
+    "jsRules": {},
+    "rules": {
+        // TSLint rules
+        "quotemark": [true, "single", "jsx-double"],
+        "semicolon": [true, "never"],
+        "member-access": true,
+        "no-any": true,
+        "typedef": [true, "call-signature", "arrow-call-signature"],
+        "whitespace": [
+            true,
+            "check-branch",
+            "check-decl",
+            "check-operator",
+            "check-module",
+            "check-separator",
+            "check-rest-spread",
+            "check-type",
+            "check-typecast",
+            "check-type-operator",
+            "check-preblock",
+            "check-postbrace"
+        ],
+        "no-console": false,
+        "prefer-for-of": true,
+
+        // JSX Rules
+        "jsx-boolean-value": false,
+        "jsx-alignment": false,
+        "jsx-curly-spacing": [true, "always"],
+        "jsx-no-multiline-js": false
+    },
+    "rulesDirectory": []
+}

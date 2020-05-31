@@ -1,0 +1,40 @@
+.container {
+    color: white;
+
+    text-transform: uppercase;
+
+    position: absolute;
+    bottom: 60px;
+    left: 20px;
+
+    display: flex;
+    align-items: center;
+}
+
+.image {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 20px -1px rgba(0, 0, 0, 0.7);
+}
+
+.data {
+    z-index: -1;
+    background: rgba(12, 12, 12, 0.78);
+    border-radius: 5px;
+    padding: 10px 30px 10px 50px;
+    margin-left: -25px;
+    text-shadow: 0 0 5px #fff;
+
+    text-align: center;
+
+    &__name {
+        font-size: 1.5em;
+    }
+
+    &__followers {
+        font-size: 1.1em;
+        color: rgba(255, 255, 255, 0.7);
+    }
+}
